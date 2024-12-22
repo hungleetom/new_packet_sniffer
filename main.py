@@ -73,15 +73,15 @@ def analyze_packet_data():
     total_bandwidth_used = np.sum(bandwidth_usage)  # 총 대역폭 사용량 (비트 단위)
     avg_bandwidth_usage = np.mean(bandwidth_usage)  # 평균 대역폭 사용량
 
-    print("\n--- 📊 데이터 분석 결과 ---")
-    print(f"1️⃣ 총 패킷 수: {len(packet_sizes)} 개")
-    print(f"2️⃣ 평균 패킷 크기: {avg_packet_size:.2f} 바이트")
-    print(f"3️⃣ 최소 패킷 크기: {min_packet_size} 바이트")
-    print(f"4️⃣ 최대 패킷 크기: {max_packet_size} 바이트")
-    print(f"5️⃣ 표준 편차: {std_packet_size:.2f}")
-    print(f"6️⃣ 총 전송된 데이터 크기: {total_data_transferred} 바이트 ({total_data_transferred / 1024:.2f} KB)")
-    print(f"7️⃣ 총 대역폭 사용량: {total_bandwidth_used} 비트 ({total_bandwidth_used / (1024 * 1024):.2f} Mbit)")
-    print(f"8️⃣ 평균 대역폭 사용량: {avg_bandwidth_usage:.2f} 비트\n")
+    print("\n--- 데이터 분석 결과 ---")
+    print(f"1️ 총 패킷 수: {len(packet_sizes)} 개")
+    print(f"2️ 평균 패킷 크기: {avg_packet_size:.2f} 바이트")
+    print(f"3️ 최소 패킷 크기: {min_packet_size} 바이트")
+    print(f"4️ 최대 패킷 크기: {max_packet_size} 바이트")
+    print(f"5️ 표준 편차: {std_packet_size:.2f}")
+    print(f"6 총 전송된 데이터 크기: {total_data_transferred} 바이트 ({total_data_transferred / 1024:.2f} KB)")
+    print(f"7️ 총 대역폭 사용량: {total_bandwidth_used} 비트 ({total_bandwidth_used / (1024 * 1024):.2f} Mbit)")
+    print(f"8️ 평균 대역폭 사용량: {avg_bandwidth_usage:.2f} 비트\n")
 
     # Seaborn 시각화
     plt.figure(figsize=(10, 6))
